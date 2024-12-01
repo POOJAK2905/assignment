@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Inheritance Test</title>
+  <style>
+    /* General style for the parent */
+    .parent {
+      color: blue; /* Will be inherited by children for text color */
+      font-size: 20px; /* Will be inherited by children */
+      border: 2px solid black; /* Non-inheritable */
+      padding: 10px;
+    }
+
+    /* Style for the child that overrides inheritance */
+    .child {
+      /* Overrides inherited blue */
+
+        color: red; 
+      font-size: 25px; /* Overrides inherited 20px */
+    }
+
+    /* Specific inline style (highest priority) */
+    .child-inline {
+      color: green !important; /* Highest priority */
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    I am the parent element.
+    <div class="child">
+      I am the child element (inherits, but overrides some properties).
+    </div>
+    <div class="child child-inline">
+      I am the child element (with inline styles overriding inheritance).
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.first{
+    color: rgb(208, 245, 73);
+    background-color: brown;
+}
+
+.main{
+    width: auto;
+}
+
+.left{
+    width: 50%;
+}
+
+.right{
+    width: 50%;
+}
